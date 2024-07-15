@@ -1,3 +1,5 @@
+// ignore_for_file: empty_catches
+
 import 'package:flutter/material.dart';
 import 'package:route_task/models/product_model.dart';
 import 'package:route_task/services/product_service.dart';
@@ -22,7 +24,6 @@ class ProductProvider with ChangeNotifier {
       _products = await _productService.fetchProducts();
       _filteredProducts = [];
     } catch (e) {
-      print(e);
     }
 
     WidgetsBinding.instance.addPostFrameCallback((_) {

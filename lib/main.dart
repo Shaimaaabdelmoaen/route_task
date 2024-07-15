@@ -9,7 +9,7 @@ void main() {
       providers: [
         ChangeNotifierProvider(create: (_) => ProductProvider()),
       ],
-      child: MyApp(),
+      child: const MyApp(),
     ),
   );
 }
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
 
       ),
-      home:  ProductListScreen()
+      home:  const ProductListScreen()
     );
   }
 }
